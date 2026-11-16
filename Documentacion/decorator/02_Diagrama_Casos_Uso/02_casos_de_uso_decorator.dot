@@ -1,0 +1,84 @@
+digraph G {
+    graph [
+        charset="UTF-8",
+        rankdir=LR,
+        newrank=true,
+        bgcolor="white",
+        pad="0.4",
+        nodesep="0.9",
+        ranksep="1.0 equally",
+        splines=ortho,
+        fontname="Helvetica",
+        labelloc=t,
+        labeljust=c,
+        label=<
+            <FONT POINT-SIZE="28"><B>FIGURA 02 | DIAGRAMA DE CASOS DE USO — DECORATOR</B></FONT><BR/>
+            <FONT POINT-SIZE="18">Demostrador actual del simulador e-commerce por consola</FONT><BR/>
+            <FONT POINT-SIZE="16">Sin interfaz de selección: las configuraciones se crean en Principal.java</FONT>
+        >
+    ];
+
+    node [fontname="Helvetica", fontsize=14, color="#1F4E79", penwidth=1.8];
+    edge [fontname="Helvetica", fontsize=12, color="#1F4E79", penwidth=1.6];
+
+    actor [
+        shape=plaintext,
+        fontsize=16,
+        fontcolor="#23395B",
+        label=<
+            <TABLE BORDER="0" CELLBORDER="0" CELLPADDING="2" CELLSPACING="0">
+                <TR><TD><FONT POINT-SIZE="34">👤</FONT></TD></TR>
+                <TR><TD><B>Ejecutor de la</B></TD></TR>
+                <TR><TD><B>demostración</B></TD></TR>
+            </TABLE>
+        >
+    ];
+
+    subgraph cluster_system {
+        label=<
+            <TABLE BORDER="0" CELLBORDER="0" CELLPADDING="6"><TR><TD><B>Simulador E-Commerce / configuración por Decorator</B></TD></TR></TABLE>
+        >;
+        fontsize=20;
+        fontname="Helvetica";
+        fontcolor="#23395B";
+        color="#2E75B6";
+        penwidth=2.0;
+        style="rounded";
+        bgcolor="#F8FBFF";
+        margin=28;
+
+        ejecutar [shape=ellipse, style="filled", fillcolor="#DDEBF7", width=2.9, height=1.2,
+            label="Ejecutar la\ndemostración", fontsize=18, fontcolor="#1F2A44"];
+        compra [shape=ellipse, style="filled", fillcolor="#FCE4D6", width=3.3, height=1.2,
+            label="Simular compra de\nla configuración\ncompleta", fontsize=16, fontcolor="#1F2A44"];
+        visualizar [shape=ellipse, style="filled", fillcolor="#FFFFFF", width=3.2, height=1.2,
+            label="Visualizar las tres\nconfiguraciones", fontsize=17, fontcolor="#1F2A44"];
+        precio [shape=ellipse, style="filled", fillcolor="#E2F0D9", width=3.1, height=1.15,
+            label="Mostrar precio\nde la computadora", fontsize=16, fontcolor="#1F2A44"];
+        descripcion [shape=ellipse, style="filled", fillcolor="#E2F0D9", width=3.3, height=1.15,
+            label="Mostrar descripción\nde la computadora", fontsize=16, fontcolor="#1F2A44"];
+
+        // Control de filas visuales
+        { rank=same; compra; precio; }
+        { rank=same; ejecutar; }
+        { rank=same; visualizar; descripcion; }
+
+        // Anclas invisibles para mantener la geometría
+        compra -> visualizar [style=invis, weight=10];
+        precio -> descripcion [style=invis, weight=10];
+    }
+
+    actor -> ejecutar [arrowhead=none, penwidth=2.0, color="#1F4E79", weight=12];
+
+    ejecutar -> compra [style=dashed, label="«include»", fontcolor="#1F4E79", color="#1F4E79", minlen=2];
+    ejecutar -> visualizar [style=dashed, label="«include»", fontcolor="#1F4E79", color="#1F4E79", minlen=2];
+
+    visualizar -> precio [style=dashed, label="«include»", fontcolor="#12806A", color="#12806A", minlen=2];
+    visualizar -> descripcion [style=dashed, label="«include»", fontcolor="#12806A", color="#12806A", minlen=2];
+
+    fuente [shape=plaintext, fontsize=14, fontcolor="#4F627D", label=<
+        <I>Fuente: elaboración propia a partir del proyecto PatronesEstructurales_Grupo2.</I>
+    >];
+
+    descripcion -> fuente [style=invis, weight=1];
+}

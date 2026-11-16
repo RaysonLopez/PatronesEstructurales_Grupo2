@@ -1,0 +1,52 @@
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam Shadowing false
+skinparam defaultFontName Georgia
+skinparam defaultTextAlignment center
+skinparam packageStyle rectangle
+skinparam usecase {
+  BorderColor #1F4E79
+  ArrowColor #1F4E79
+  BackgroundColor #FFFFFF
+  FontColor #1F2A44
+  FontSize 18
+}
+skinparam rectangle {
+  BorderColor #2E75B6
+  FontColor #23395B
+  FontSize 20
+  RoundCorner 20
+}
+skinparam actor {
+  BorderColor #1F4E79
+  FontColor #23395B
+}
+skinparam note {
+  BorderColor #B8CBE0
+  BackgroundColor #F8FBFF
+  FontColor #23395B
+}
+
+title <size:26><b>FIGURA 02 | DIAGRAMA DE CASOS DE USO — DECORATOR</b></size>\n<size:18>Demostrador actual del simulador e-commerce por consola</size>\n<size:16>Sin interfaz de selección: las configuraciones se crean en Principal.java</size>
+
+actor "Ejecutor de la\ndemostración" as Actor
+
+rectangle "Simulador E-Commerce / configuración por Decorator" as Sistema #F8FBFF {
+  usecase "Ejecutar la\ndemostración" as UC_Ejecutar #DDEBF7
+  usecase "Simular compra de\nla configuración\ncompleta" as UC_Compra #FCE4D6
+  usecase "Visualizar las tres\nconfiguraciones" as UC_Visualizar #FFFFFF
+  usecase "Mostrar precio\nde la computadora" as UC_Precio #E2F0D9
+  usecase "Mostrar descripción\nde la computadora" as UC_Descripcion #E2F0D9
+}
+
+Actor --> UC_Ejecutar
+UC_Ejecutar ..> UC_Compra : <<include>>
+UC_Ejecutar ..> UC_Visualizar : <<include>>
+UC_Visualizar ..> UC_Precio : <<include>>
+UC_Visualizar ..> UC_Descripcion : <<include>>
+
+legend bottom
+  Fuente: elaboración propia a partir del proyecto PatronesEstructurales_Grupo2.
+endlegend
+@enduml
