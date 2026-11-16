@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="1105px" version="1.1" viewBox="0 0 1920 1105" width="1920px">
+  <defs/>
+  <rect fill="#FFFFFF" height="1105" width="1920" x="0" y="0"/>
+  <text fill="#173451" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-style="normal" font-weight="bold" text-anchor="start" x="74" y="89">FIGURA 03  |  DIAGRAMA DE SECUENCIA — CÁLCULO DEL PRECIO</text>
+  <line fill="none" stroke="#D8E2EE" stroke-linecap="round" stroke-width="2" x1="75" x2="1845" y1="112" y2="112"/>
+  <rect fill="#EAF2FB" height="119" rx="14" ry="14" stroke="#285E9B" stroke-width="2.5" width="350" x="23.0" y="157"/>
+  <text fill="#173451" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-style="normal" font-weight="bold" text-anchor="middle" x="198" y="201">Principal</text>
+  <text fill="#173451" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.8" font-style="normal" font-weight="normal" text-anchor="middle" x="198" y="242">mostrarComputadora(titulo, computadora)</text>
+  <line fill="none" stroke="#B7C8D9" stroke-dasharray="10 11" stroke-linecap="round" stroke-width="2.2" x1="198" x2="198" y1="276" y2="1040"/>
+  <rect fill="#FFF4E5" height="119" rx="14" ry="14" stroke="#B97523" stroke-width="2.5" width="306" x="412.0" y="157"/>
+  <text fill="#173451" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-style="normal" font-weight="bold" text-anchor="middle" x="565" y="201">completa:</text>
+  <text fill="#173451" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-style="normal" font-weight="bold" text-anchor="middle" x="565" y="242">ConDiscoSsd</text>
+  <line fill="none" stroke="#B7C8D9" stroke-dasharray="10 11" stroke-linecap="round" stroke-width="2.2" x1="565" x2="565" y1="276" y2="1040"/>
+  <rect fill="#E8F5F1" height="119" rx="14" ry="14" stroke="#0E857B" stroke-width="2.5" width="306" x="779.0" y="157"/>
+  <text fill="#173451" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-style="normal" font-weight="bold" text-anchor="middle" x="932" y="201">ram:</text>
+  <text fill="#173451" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-style="normal" font-weight="bold" text-anchor="middle" x="932" y="242">ConMemoriaExtra</text>
+  <line fill="none" stroke="#B7C8D9" stroke-dasharray="10 11" stroke-linecap="round" stroke-width="2.2" x1="932" x2="932" y1="276" y2="1040"/>
+  <rect fill="#E8F5F1" height="119" rx="14" ry="14" stroke="#0E857B" stroke-width="2.5" width="306" x="1146.0" y="157"/>
+  <text fill="#173451" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-style="normal" font-weight="bold" text-anchor="middle" x="1299" y="201">gpu:</text>
+  <text fill="#173451" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-style="normal" font-weight="bold" text-anchor="middle" x="1299" y="242">ConTarjetaGrafica</text>
+  <line fill="none" stroke="#B7C8D9" stroke-dasharray="10 11" stroke-linecap="round" stroke-width="2.2" x1="1299" x2="1299" y1="276" y2="1040"/>
+  <rect fill="#EAF2FB" height="119" rx="14" ry="14" stroke="#285E9B" stroke-width="2.5" width="306" x="1513.0" y="157"/>
+  <text fill="#173451" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-style="normal" font-weight="bold" text-anchor="middle" x="1666" y="201">base:</text>
+  <text fill="#173451" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-style="normal" font-weight="bold" text-anchor="middle" x="1666" y="242">ComputadoraBasica</text>
+  <line fill="none" stroke="#B7C8D9" stroke-dasharray="10 11" stroke-linecap="round" stroke-width="2.2" x1="1666" x2="1666" y1="276" y2="1040"/>
+  <rect fill="#EAF2FB" height="606" rx="1" ry="1" stroke="#285E9B" stroke-width="1.7" width="20" x="555" y="364"/>
+  <rect fill="#EAF2FB" height="437" rx="1" ry="1" stroke="#285E9B" stroke-width="1.7" width="20" x="922" y="448"/>
+  <rect fill="#EAF2FB" height="268" rx="1" ry="1" stroke="#285E9B" stroke-width="1.7" width="20" x="1289" y="532"/>
+  <rect fill="#EAF2FB" height="99" rx="1" ry="1" stroke="#285E9B" stroke-width="1.7" width="20" x="1656" y="616"/>
+  <line fill="none" stroke="#285E9B" stroke-linecap="round" stroke-width="3" x1="198" x2="539.0" y1="370" y2="370.0"/>
+  <polygon fill="#285E9B" points="554,370 539.0,378.0 539.0,362.0" stroke="#285E9B" stroke-width="1"/>
+  <text fill="#20344D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-style="normal" font-weight="normal" text-anchor="middle" x="376.0" y="353">1. getPrecio()</text>
+  <line fill="none" stroke="#285E9B" stroke-linecap="round" stroke-width="3" x1="576" x2="906.0" y1="454" y2="454.0"/>
+  <polygon fill="#285E9B" points="921,454 906.0,462.0 906.0,446.0" stroke="#285E9B" stroke-width="1"/>
+  <text fill="#20344D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-style="normal" font-weight="normal" text-anchor="middle" x="748.5" y="437">2. getPrecio()</text>
+  <line fill="none" stroke="#285E9B" stroke-linecap="round" stroke-width="3" x1="943" x2="1273.0" y1="538" y2="538.0"/>
+  <polygon fill="#285E9B" points="1288,538 1273.0,546.0 1273.0,530.0" stroke="#285E9B" stroke-width="1"/>
+  <text fill="#20344D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-style="normal" font-weight="normal" text-anchor="middle" x="1115.5" y="521">3. getPrecio()</text>
+  <line fill="none" stroke="#285E9B" stroke-linecap="round" stroke-width="3" x1="1310" x2="1640.0" y1="622" y2="622.0"/>
+  <polygon fill="#285E9B" points="1655,622 1640.0,630.0 1640.0,614.0" stroke="#285E9B" stroke-width="1"/>
+  <text fill="#20344D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-style="normal" font-weight="normal" text-anchor="middle" x="1482.5" y="605">4. getPrecio()</text>
+  <line fill="none" stroke="#0E857B" stroke-dasharray="12 9" stroke-linecap="round" stroke-width="3" x1="1655" x2="1325.0" y1="706" y2="706.0"/>
+  <polygon fill="#0E857B" points="1310,706 1325.0,698.0 1325.0,714.0" stroke="#0E857B" stroke-width="1"/>
+  <text fill="#20344D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-style="normal" font-weight="normal" text-anchor="middle" x="1482.5" y="689">5. $500.00</text>
+  <line fill="none" stroke="#0E857B" stroke-dasharray="12 9" stroke-linecap="round" stroke-width="3" x1="1288" x2="958.0" y1="790" y2="790.0"/>
+  <polygon fill="#0E857B" points="943,790 958.0,782.0 958.0,798.0" stroke="#0E857B" stroke-width="1"/>
+  <text fill="#20344D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-style="normal" font-weight="normal" text-anchor="middle" x="1115.5" y="773">6. $750.00 = 500 + 250</text>
+  <line fill="none" stroke="#0E857B" stroke-dasharray="12 9" stroke-linecap="round" stroke-width="3" x1="921" x2="591.0" y1="874" y2="874.0"/>
+  <polygon fill="#0E857B" points="576,874 591.0,866.0 591.0,882.0" stroke="#0E857B" stroke-width="1"/>
+  <text fill="#20344D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-style="normal" font-weight="normal" text-anchor="middle" x="748.5" y="857">7. $830.00 = 750 + 80</text>
+  <line fill="none" stroke="#0E857B" stroke-dasharray="12 9" stroke-linecap="round" stroke-width="3" x1="554" x2="213.0" y1="958" y2="958.0"/>
+  <polygon fill="#0E857B" points="198,958 213.0,950.0 213.0,966.0" stroke="#0E857B" stroke-width="1"/>
+  <text fill="#20344D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-style="normal" font-weight="normal" text-anchor="middle" x="376.0" y="941">8. $950.00 = 830 + 120</text>
+</svg>
