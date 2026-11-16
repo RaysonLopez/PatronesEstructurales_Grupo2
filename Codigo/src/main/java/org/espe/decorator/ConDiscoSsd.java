@@ -1,12 +1,17 @@
-package ec.edu.espe.patrones.decorator;
+package org.espe.decorator;
 
 /**
- * Concrete Decorator: agrega "Disco SSD 1TB" y suma $120.00 al precio.
+ * Decorador concreto que agrega un disco SSD de 1 TB.
  */
 public class ConDiscoSsd extends DecoradorComputadora {
 
     private static final double PRECIO_EXTRA = 120.00;
 
+    /**
+     * Envuelve una computadora y le agrega un disco SSD.
+     *
+     * @param computadora computadora que recibirá el extra
+     */
     public ConDiscoSsd(IComputadora computadora) {
         super(computadora);
     }
@@ -21,3 +26,9 @@ public class ConDiscoSsd extends DecoradorComputadora {
         return computadora.getPrecio() + PRECIO_EXTRA;
     }
 }
+    /**
+     * {@inheritDoc}
+     */
+    /**
+     * {@inheritDoc}
+     */

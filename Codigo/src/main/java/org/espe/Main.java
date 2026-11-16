@@ -1,17 +1,38 @@
 package org.espe;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.Locale;
+import org.espe.decorator.ComputadoraBasica;
+import org.espe.decorator.ConDiscoSsd;
+import org.espe.decorator.ConMemoriaExtra;
+import org.espe.decorator.ConTarjetaGrafica;
+import org.espe.decorator.IComputadora;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+/**
+ * Punto de entrada para demostrar la composición dinámica del patrón Decorator.
+ */
+public class Main {
+
+    /**
+     * Construye configuraciones de computadora y muestra cómo cada decorador
+     * agrega su comportamiento sin modificar la clase base.
+     *
+     * @param args argumentos de línea de comandos no utilizados
+     */
+    public static void main(String[] args) {
+        IComputadora basica = new ComputadoraBasica();
+        IComputadora gamer = new ConMemoriaExtra(
+                new ConTarjetaGrafica(new ComputadoraBasica()));
+        IComputadora completa = new ConDiscoSsd(gamer);
+
+        System.out.println("=== DEMOSTRACIÓN DEL PATRÓN DECORATOR ===");
+        mostrarConfiguracion("Computadora básica", basica);
+        mostrarConfiguracion("Computadora gamer", gamer);
+        mostrarConfiguracion("Computadora completa", completa);
+    }
+
+    private static void mostrarConfiguracion(String nombre, IComputadora computadora) {
+        System.out.printf("%n%s%n", nombre);
+        System.out.printf("Descripción: %s%n", computadora.getDescripcion());
+        System.out.printf(Locale.US, "Precio: $%.2f%n", computadora.getPrecio());
     }
 }
