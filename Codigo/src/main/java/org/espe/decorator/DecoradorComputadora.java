@@ -3,21 +3,28 @@ package org.espe.decorator;
 import java.util.Objects;
 
 /**
- * Decorador abstracto del patrón Decorator.
+ * Clase base de todos los extras que se pueden añadir a una computadora.
  *
- * <p>Implementa el mismo contrato que una computadora y conserva una
- * computadora envuelta a la que delega el comportamiento base. Los
- * decoradores concretos extienden la descripción y el precio.</p>
+ * <p>Un decorador también es una {@link IComputadora}, pero guarda otra
+ * computadora en el campo {@link #computadora}. Esa referencia contiene la
+ * configuración creada hasta ese momento. Por ejemplo, la RAM puede contener
+ * una tarjeta gráfica, y la tarjeta gráfica puede contener una computadora
+ * básica.</p>
+ *
+ * <p>Esta clase delega las operaciones al objeto interno. Las subclases solo
+ * sobrescriben lo necesario para sumar su nombre y su precio.</p>
  */
 public abstract class DecoradorComputadora implements IComputadora {
 
+    /** Configuración existente sobre la que se agrega un nuevo extra. */
     protected final IComputadora computadora;
 
     /**
-     * Crea un decorador para una computadora existente.
+     * Crea un decorador para una configuración existente.
      *
-     * @param computadora computadora que se va a envolver
-     * @throws NullPointerException si {@code computadora} es nula
+     * @param computadora configuración que se va a ampliar; no puede ser nula
+     * @throws NullPointerException si {@code computadora} es nula, ya que no
+     *         habría un objeto del cual obtener descripción y precio
      */
     protected DecoradorComputadora(IComputadora computadora) {
         this.computadora = Objects.requireNonNull(
@@ -26,7 +33,16 @@ public abstract class DecoradorComputadora implements IComputadora {
     }
 
     /**
-     * {@inheritDoc}
+     * Devuelve la descripción del objeto interno sin añadir cambios.
+     * Las subclases toman este resultado y agregan la descripción de su extra.
+     *
+     * @return descripción de la configuración que está envuelta
+     */
+    /**
+     * Devuelve el precio del objeto interno sin añadir cambios.
+     * Las subclases toman este resultado y agregan el costo de su extra.
+     *
+     * @return precio de la configuración que está envuelta
      */
     @Override
     public String getDescripcion() {
@@ -38,6 +54,3 @@ public abstract class DecoradorComputadora implements IComputadora {
         return computadora.getPrecio();
     }
 }
-    /**
-     * {@inheritDoc}
-     */

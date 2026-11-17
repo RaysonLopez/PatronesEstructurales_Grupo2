@@ -1,23 +1,33 @@
 package org.espe.decorator;
 
 /**
- * Componente del patrón Decorator.
+ * Define las operaciones mínimas que una computadora configurable debe ofrecer.
  *
- * <p>Define el contrato común para la computadora base y para cada extra que
- * pueda envolverla. Esto permite combinar configuraciones sin depender de una
- * clase concreta.</p>
+ * <p>Esta interfaz es el contrato común del módulo. Una computadora básica y
+ * cada extra implementan los mismos métodos; por eso el programa puede usar
+ * una sola variable de tipo {@code IComputadora} sin importar cuántos extras
+ * tenga el objeto real.</p>
+ *
+ * <p>El patrón Decorator crea capas. Cada capa consulta el objeto que contiene,
+ * añade su propia información y devuelve el resultado completo.</p>
  */
 public interface IComputadora {
 
     /**
-     * Obtiene la descripción completa de la configuración.
+     * Obtiene un texto con la configuración actual.
      *
-     * @return descripción de la computadora y sus extras
+     * <p>La computadora básica entrega su nombre. Cada extra toma el texto
+     * anterior y agrega el nombre del componente que representa.</p>
+     *
+     * @return descripción completa de la computadora y sus extras
      */
     String getDescripcion();
 
     /**
-     * Obtiene el precio total de la configuración.
+     * Calcula el precio total de la configuración.
+     *
+     * <p>La computadora básica devuelve su precio inicial. Cada extra consulta
+     * ese precio, suma su costo y devuelve el nuevo total.</p>
      *
      * @return precio total en dólares estadounidenses
      */

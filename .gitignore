@@ -14,3 +14,12 @@ build/
 # Operating system files
 .DS_Store
 Thumbs.db
+
+# MiniChip: dependencies, bundles and local runtime files
+MiniChip/
+MiniChip/node_modules/
+MiniChip/dist/
+MiniChip/release/
+MiniChip/.bun-tmp/
+MiniChip/.minichip-debug.log
+MiniChip/*.log
