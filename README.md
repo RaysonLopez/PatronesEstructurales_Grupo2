@@ -17,16 +17,14 @@ El proyecto demostrará dos casos de e-commerce:
 
 ## Integrantes y roles
 
-Completar antes de la entrega:
-
 | Integrante | Rol | Responsabilidad |
 | --- | --- | --- |
-| Estudiante 1 | Teoría | Adapter y analogía del adaptador de enchufe. |
-| Estudiante 2 | Teoría | Decorator y analogía de extras para café. |
-| Estudiante 3 | Análisis | UML y escenario de integración legacy. |
-| Estudiante 4 | Análisis | UML y relación con OCP y DIP. |
-| Estudiante 5 | Desarrollo | Live coding del Adapter. |
-| Estudiante 6 | Desarrollo | Live coding del Decorator. |
+| Melanie Brigith Reimundo Llumiquinga | Teoría y analogías | Adapter y analogía del adaptador de enchufe. |
+| Cristina Nicole Carvajal Lozada | Teoría y analogías | Decorator y analogía de extras para café. |
+| Sebastian Daniel Quinga Pinto | Análisis de arquitectura | UML de Adapter e integración con sistemas legacy. |
+| Christian David Ramos Alava | Análisis de arquitectura | UML de Decorator y relación con OCP. |
+| Rayson Steve Lopez de la Cruz | Desarrollo y live coding | Implementación del Adapter: pasarela de pago. |
+| Mateo Orlando Salvador Tulcan | Desarrollo y live coding | Implementación del Decorator: computadora configurable. |
 
 ## Ejecución
 
